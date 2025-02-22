@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "builds": [
+    { "src": "api/*.py", "use": "@vercel/python" }
+  ],
+  "routes": [
+    { "src": "/api/info", "dest": "/api/info.py" },
+    { "src": "/api/avatarsaved", "dest": "/api/avatarsaved.py" },
+    { "src": "/api/badge", "dest": "/api/badge.py" }
+  ]
+}
